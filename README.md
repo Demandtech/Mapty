@@ -1,3 +1,4 @@
+![screenshot](./img/screenshot.png)
 # Introduction
   This is a simple application built with JavaScript, Leaflet library and OpenStreetMap. It is used for tracking workouts like running and cycling. The user can input their data, which includes the type of workout, distance covered, duration, and additional information depending on the type of workout.
 
