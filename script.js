@@ -138,6 +138,7 @@ class App {
   }
 
   _showForm(mapE) {
+     document.querySelector('.instruction').style.display = 'none';
     this.#mapEvent = mapE;
     form.classList.remove('hidden');
     inputDistance.focus();
@@ -178,9 +179,6 @@ class App {
       const cadence = +inputCadence.value
       //Check if data is valid
       if (
-        // !Number.isFinite(distance) || 
-        // !Number.isFinite(duration) || 
-        // !Number.isFinite(cadence)
         !validInputs(distance, duration, cadence)||
         !allPositive(distance, duration, cadence)
         ) 
@@ -234,7 +232,7 @@ class App {
   }
 
   _renderWorkout(workout){
-    
+   
     let html = `
     <li class="workout workout--${workout.type}" data-id="${workout.id}">
           <h2 class="workout__title">${workout.description}</h2>
