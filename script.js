@@ -232,7 +232,7 @@ class App {
   }
 
   _renderWorkout(workout){
-   
+    document.querySelector('.instruction').style.display = 'none';
     let html = `
     <li class="workout workout--${workout.type}" data-id="${workout.id}">
           <h2 class="workout__title">${workout.description}</h2>
